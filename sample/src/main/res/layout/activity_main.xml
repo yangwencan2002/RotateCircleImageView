@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light"
+        android:padding="@dimen/padding">
+
+        <com.vincan.rotatecircleimageview.RotateCircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/penguin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dark"
+        android:padding="@dimen/padding">
+
+        <com.vincan.rotatecircleimageview.RotateCircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/penguin"
+            app:rciv_border_width="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light"
+        android:padding="@dimen/padding">
+
+        <com.vincan.rotatecircleimageview.RotateCircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/penguin"
+            app:rciv_border_colors="@array/border_colors"
+            app:rciv_border_padding="2dp"
+            app:rciv_border_width="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dark"
+        android:padding="@dimen/padding">
+
+        <com.vincan.rotatecircleimageview.RotateCircleImageView
+            android:id="@+id/rotateCircleImageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/penguin"
+            app:rciv_border_padding="2dp"
+            app:rciv_border_style="rotate"
+            app:rciv_border_width="3dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

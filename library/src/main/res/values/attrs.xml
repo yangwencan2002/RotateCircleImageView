@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RotateCircleImageView">
+        <attr name="rciv_border_width" format="dimension" />
+        <attr name="rciv_border_colors" format="reference" />
+        <attr name="rciv_border_overlay" format="boolean" />
+        <attr name="rciv_circle_background_color" format="color" />
+        <attr name="rciv_border_padding" format="dimension" />
+        <attr name="rciv_border_track_start_color" format="color" />
+        <attr name="rciv_border_track_end_color" format="color" />
+        <attr name="rciv_border_track_duration" format="integer" />
+        <attr name="rciv_border_rotate_duration" format="integer" />
+        <attr name="rciv_border_style">
+            <enum name="still" value="0" />
+            <enum name="rotate" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
