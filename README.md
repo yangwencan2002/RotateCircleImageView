@@ -1,6 +1,6 @@
 RotateCircleImageView
 =====================
-[![Build Status](https://api.travis-ci.org/yangwencan2002/RotateCircleImageView.svg?branch=master)](https://travis-ci.org/yangwencan2002/RotateCircleImageView/) [ ![Download](https://api.bintray.com/packages/yangwencan2002/maven/RotateCircleImageView/images/download.svg) ](https://bintray.com/yangwencan2002/maven/RotateCircleImageView/_latestVersion)
+[![Build Status](https://api.travis-ci.org/yangwencan2002/RotateCircleImageView.svg?branch=master)](https://travis-ci.org/yangwencan2002/RotateCircleImageView/) [ ![Download](https://api.bintray.com/packages/yangwencan2002/maven/RotateCircleImageView/images/download.svg) ](https://bintray.com/yangwencan2002/maven/RotateCircleImageView/_latestVersion)[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 Introduction
 ------
