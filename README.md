@@ -1,5 +1,6 @@
 RotateCircleImageView
 =====================
+[![Build Status](https://api.travis-ci.org/yangwencan2002/RotateCircleImageView.svg?branch=master)](https://travis-ci.org/yangwencan2002/RotateCircleImageView/) [ ![Download](https://api.bintray.com/packages/yangwencan2002/maven/RotateCircleImageView/images/download.svg) ](https://bintray.com/yangwencan2002/maven/RotateCircleImageView/_latestVersion)
 
 Introduction
 ------
@@ -47,6 +48,9 @@ See `sample` project.
 Release Notes
 ------
 [here](https://github.com/yangwencan2002/RotateCircleImageView/releases)
+
+## Where released?
+[bintray.com](https://bintray.com/yangwencan2002/maven/RotateCircleImageView)
 
 License
 ------
