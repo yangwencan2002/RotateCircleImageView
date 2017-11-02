@@ -7,7 +7,7 @@ Introduction
 
 A fast rotating circular ImageView perfect for profile images. This is based on [CircleImageView from Henning Dodenhof](https://github.com/hdodenhof/CircleImageView) which itself is based on [RoundedImageView from Vince Mi](https://github.com/vinc3m1/RoundedImageView).
 
-![RotateCircleImageView](https://raw.github.com/yangwencan2002/RotateCircleImageView/master/screenshot.jpg)
+![RotateCircleImageView](https://raw.github.com/yangwencan2002/RotateCircleImageView/master/screenshot.gif)
 
 Gradle
 ------
