@@ -139,23 +139,26 @@ public class RotateCircleImageView extends ImageView {
     public RotateCircleImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.RotateCircleImageView, defStyle, 0);
-        mBorderWidth = typedArray.getDimensionPixelSize(R.styleable.RotateCircleImageView_rciv_border_width, DEFAULT_BORDER_WIDTH);
-        mBorderOverlay = typedArray.getBoolean(R.styleable.RotateCircleImageView_rciv_border_overlay, DEFAULT_BORDER_OVERLAY);
-        mCircleBackgroundColor = typedArray.getColor(R.styleable.RotateCircleImageView_rciv_circle_background_color,
-                DEFAULT_CIRCLE_BACKGROUND_COLOR);
+        try {
+            mBorderWidth = typedArray.getDimensionPixelSize(R.styleable.RotateCircleImageView_rciv_border_width, DEFAULT_BORDER_WIDTH);
+            mBorderOverlay = typedArray.getBoolean(R.styleable.RotateCircleImageView_rciv_border_overlay, DEFAULT_BORDER_OVERLAY);
+            mCircleBackgroundColor = typedArray.getColor(R.styleable.RotateCircleImageView_rciv_circle_background_color,
+                    DEFAULT_CIRCLE_BACKGROUND_COLOR);
 
-        final int borderColorsId = typedArray.getResourceId(R.styleable.RotateCircleImageView_rciv_border_colors, 0);
-        mBorderPadding = typedArray.getDimensionPixelSize(R.styleable.RotateCircleImageView_rciv_border_padding, DEFAULT_BORDER_PADDING);
-        mBorderTrackStartColor = typedArray.getColor(R.styleable.RotateCircleImageView_rciv_border_track_start_color, DEFAULT_BORDER_TRACK_START_COLOR);
-        mBorderTrackEndColor = typedArray.getColor(R.styleable.RotateCircleImageView_rciv_border_track_start_color, DEFAULT_BORDER_TRACK_END_COLOR);
-        mBorderTrackDuration = typedArray.getInt(R.styleable.RotateCircleImageView_rciv_border_track_duration, DEFAULT_BORDER_TRACK_DURATION);
-        mBorderRotateDuration = typedArray.getInt(R.styleable.RotateCircleImageView_rciv_border_rotate_duration, DEFAULT_BORDER_ROTATE_DURATION);
-        BorderStyle circleStyle = sBorderStyleArray.get(typedArray.getInt(R.styleable.RotateCircleImageView_rciv_border_style, BorderStyle.STILL.ordinal()));
-        setBorderStyle(circleStyle);
-        if (borderColorsId != 0) {
-            mBorderColors = getResources().getIntArray(borderColorsId);
+            final int borderColorsId = typedArray.getResourceId(R.styleable.RotateCircleImageView_rciv_border_colors, 0);
+            mBorderPadding = typedArray.getDimensionPixelSize(R.styleable.RotateCircleImageView_rciv_border_padding, DEFAULT_BORDER_PADDING);
+            mBorderTrackStartColor = typedArray.getColor(R.styleable.RotateCircleImageView_rciv_border_track_start_color, DEFAULT_BORDER_TRACK_START_COLOR);
+            mBorderTrackEndColor = typedArray.getColor(R.styleable.RotateCircleImageView_rciv_border_track_start_color, DEFAULT_BORDER_TRACK_END_COLOR);
+            mBorderTrackDuration = typedArray.getInt(R.styleable.RotateCircleImageView_rciv_border_track_duration, DEFAULT_BORDER_TRACK_DURATION);
+            mBorderRotateDuration = typedArray.getInt(R.styleable.RotateCircleImageView_rciv_border_rotate_duration, DEFAULT_BORDER_ROTATE_DURATION);
+            BorderStyle circleStyle = sBorderStyleArray.get(typedArray.getInt(R.styleable.RotateCircleImageView_rciv_border_style, BorderStyle.STILL.ordinal()));
+            setBorderStyle(circleStyle);
+            if (borderColorsId != 0) {
+                mBorderColors = getResources().getIntArray(borderColorsId);
+            }
+        } finally {
+            typedArray.recycle();
         }
-        typedArray.recycle();
         init();
     }
 
