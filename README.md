@@ -1,6 +1,9 @@
 RotateCircleImageView
 =====================
-[![Build Status](https://api.travis-ci.org/yangwencan2002/RotateCircleImageView.svg?branch=master)](https://travis-ci.org/yangwencan2002/RotateCircleImageView/) [ ![Download](https://api.bintray.com/packages/yangwencan2002/maven/RotateCircleImageView/images/download.svg) ](https://bintray.com/yangwencan2002/maven/RotateCircleImageView/_latestVersion)[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Build Status](https://api.travis-ci.org/yangwencan2002/RotateCircleImageView.svg?branch=master)](https://travis-ci.org/yangwencan2002/RotateCircleImageView/)
+[![Download](https://api.bintray.com/packages/yangwencan2002/maven/RotateCircleImageView/images/download.svg)](https://bintray.com/yangwencan2002/maven/RotateCircleImageView/_latestVersion)
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![QQ Approved](https://img.shields.io/badge/QQ_Approved-1.0.0-red.svg)](https://github.com/yangwencan2002/RotateCircleImageView)
 
 Introduction
 ------
@@ -19,7 +22,7 @@ dependencies {
 ```
 
 Usage
------
+------
 XML
 ```xml
 <com.vincan.rotatecircleimageview.RotateCircleImageView
@@ -35,21 +38,27 @@ XML
 Java
 
 ```java
-rotateCircleImageView.setBorderWidth(2);
-rotateCircleImageView.setBorderPadding(2);
-rotateCircleImageView.setBorderColors(new int[]{Color.BLUE, Color.LTGRAY});
-rotateCircleImageView.setBorderStyle(BorderStyle.ROTATE);
+rotateCircleImageView.setBorderWidth(2);//border width
+rotateCircleImageView.setBorderPadding(2);//border padding
+rotateCircleImageView.setBorderColors(new int[]{Color.BLUE, Color.LTGRAY});//border colors starting at 12 o'clock and going clockwise
+rotateCircleImageView.setBorderStyle(BorderStyle.ROTATE);//border style
 ```
 
 Sample
 ------
 See `sample` project.
 
-Release Notes
+Approved app
+------
+#### QQ
+![QQ](https://raw.github.com/yangwencan2002/RotateCircleImageView/master/screencap_QQ.gif)
+
+Release notes
 ------
 [here](https://github.com/yangwencan2002/RotateCircleImageView/releases)
 
-## Where released?
+Where released
+------
 [bintray.com](https://bintray.com/yangwencan2002/maven/RotateCircleImageView)
 
 License
